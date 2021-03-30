@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .top-wrapper {
+    /*padding: 180px 0 100px 0; */
+    padding: 80px 0 100px 0;
+    background-image: url(image/gunung.jpg);
+    background-size: cover;
+    color: white;
+    /* text-align: center; */
+    min-height: 1000px;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 1;
+    font-size: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    animation: mymove 3s linear 3s infinite alternate;
+  }
+  
+  .top-wrapper p {
+    margin-top: 50px;
+    opacity: 0.8;
+    font-size:24px;
+  }
+  
+  .btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    color: white;
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 20px;
+  }
+  
+  .header-left {
+    float: left;
+    margin-top: -8px;
+  }
+
+  .header-left h1 {
+    animation:animated_div 5s infinite;
+    /*-moz-animation:animated_div 5s 1;
+    -webkit-animation:animated_div 5s 1;
+    -o-animation:animated_div 5s 1;*/
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.3s;
+  }
+  
+  .header-right a span{
+    padding : 10px;
+    border:1px solid white;
+    transition: all 0.3s;
+  }
+  
+  .header-right a:hover span{
+    border:1px dashed #b8df0c;
+  }
+  
+  .header-right a:hover {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    color: #b8df0c;
+  }
+  
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display:none;
+  }
+  
+  
+  .artikel-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .artikel {
+    float: left;
+    width: 25%;
+  }
+  
+  .artikel-icon {
+    position: relative;
+  }
+  
+  .artikel-icon img{
+    width: 275px;
+    height: 300px;
+    transition: 0.3s;
+  }
+  
+  .artikel-icon:hover img{
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    margin-top: -8px;
+  }
+  
+  .artikel-icon p {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    color: white;
+    font-size : 18px;
+    font-weight: bold;
+  }
+  
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #aeb5b1;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+  .subscribe-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .subscribe-wrapper img{
+    position: absolute;
+    opacity: 0;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    animation: appearBg 3s forwards;
+    animation-delay: 3s;
+  }
+  
+  .subscribe {
+    padding: 15px 40px;
+    background-color: #a4c512;
+    cursor: pointer;
+    box-shadow: 0 7px 3px #343f03;
+    animation: mysubs 5s ease;
+  }
+  
+  .subscribe:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+  
+  footer img {
+    width: 125px;
+  }
+  
+  footer p {
+    color: #000000;
+    font-size: 12px;
+  }
+  
+  footer {
+    height: 65px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .fa {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .footer-left {
+      float: left;
+  }
+
+  .footer-right {
+      float: right;
+      
+  }
+
+  .top-heading {
+      margin-top: 100px;
+      text-align: center;
+      opacity: 0;
+      animation: appear 3s forwards;
+      animation-delay: 1s;
+  }
+
+  .top-heading h2 {
+      font-family: Arial Black;
+      font-size: 50px;
+  }
+
+  .mid-wrapper {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+    color: #ffff;
+    font-family: 'Train One', cursive;
+    letter-spacing: 2px;
+  }
+  
+  .mid-wrapper-1 {
+    text-align: center;
+    font-size: 40px;
+    color: #ffff;
+    font-family: 'Train One', cursive;
+    letter-spacing: 2px;
+  }
+  
+  .bottom-wrapper {
+    text-align: center;
+    color: #ffff;
+  }
+
+#top-wrapperh1 {animation-timing-function: ease;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+
+#subscribe {
+    animation-timing-function: ease;
+
+}
+
+@keyframes mysubs {
+    from {bottom: 0px;}
+    to {top: 80px;}
+  }
+ 
+  #animated_div {
+    width:70px;
+    height:47px;
+    background: #92B901;
+    color: #ffffff;
+    position: relative;
+    font-weight:bold;
+    font-size:30px;
+    padding:10px;
+    border-radius:5px;
+    /*-webkit-animation:animated_div 5s 1;
+    animation:animated_div 5s 1;
+    -moz-animation:animated_div 5s 1;
+    -webkit-animation:animated_div 5s 1;
+    -o-animation:animated_div 5s 1;
+    -webkit-border-radius:5px;*/
+    
+    }
+    
+    @keyframes animated_div
+    {
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50% {transform: rotate(0deg);left:500px;}
+    55% {transform: rotate(0deg);left:500px;}
+    70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {transform: rotate(-360deg);left:0px;}
+    }
+
+    @keyframes slideFromLeft{
+        0%{
+          margin-left: -600px;
+        }
+        75%{
+          margin-left: 0px;
+        }
+        100%{
+          color: rgb(255, 255, 255);
+          text-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+      }
+      
+      @keyframes appear{
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+          text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+      }
+      
+      @keyframes appearBg{
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      
+      @keyframes appearArtikel{
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+
